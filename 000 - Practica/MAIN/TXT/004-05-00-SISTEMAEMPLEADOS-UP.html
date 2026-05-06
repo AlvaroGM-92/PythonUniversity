@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="../CSS/estiloTXT.css" media="screen" />
+            <title>004-05-00-SISTEMAEMPLEADOS-UP</title>
+        </head>
+        <body>
+            <p>
+    print('*** Sistema de Empleados ***')<br>
+nombre_empleado = input('Nombre del empleado: ')<br>
+edad_empleado = int(input('Edad del empleado: '))<br>
+salario_empleado = float(input('Salario del empleado: '))<br>
+es_jefe_departamento = input('Es jefe departamento (Si/No)? ')<br>
+<br>
+# Vamos a convertir a un tipo bool la variable es_jefe_departamento<br>
+es_jefe_departamento = es_jefe_departamento.lower() == 'si'<br>
+<br>
+# Imprimir los valores del Empleado<br>
+print('\nDatos del Empleado')<br>
+print(f'Nombre: {nombre_empleado}')<br>
+print(f'Edad: {edad_empleado}')<br>
+print(f'Salario: {salario_empleado:.2f}')<br>
+print(f'Es Jefe de Departamento? {es_jefe_departamento}')<br>
+<br>
+
+            </p>
+        </body>
+    </html>
+            <!--
+                &emsp; = Tabular grande
+                &ensp; = Tabular pequeña
+                <br> = Salto de línea
+                &lt; = <
+                &gt; = >
+            -->

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="../CSS/estiloTXT.css" media="screen" />
+            <title>004-12-00-SOLUCION-GENERADOREMAILS-UP</title>
+        </head>
+        <body>
+            <p>
+    print('*** Sistema Generador de Emails ***')<br>
+nombre = input('Cual es tu nombre? ')<br>
+apellidos = input('Cuales son tus apellidos? ')<br>
+empresa = input('Nombre de tu empresa? ')<br>
+extension_dominio = input('Extension del dominio de tu empresa? ')<br>
+<br>
+# Normalizamos los valores recibidos<br>
+nombre = nombre.strip().lower().replace(' ','.')<br>
+apellidos = apellidos.strip().lower().replace(' ', '.')<br>
+empresa = empresa.strip().lower().replace(' ', '')<br>
+extension_dominio = extension_dominio.strip().lower().replace(' ', '')<br>
+<br>
+# Generar el email<br>
+email = f'{nombre}.{apellidos}@{empresa}{extension_dominio}'<br>
+<br>
+print(f'''<br>
+Tu nuevo email generado por el sistema es:<br>
+&emsp;{email}<br>
+&emsp;Felicidades!''')<br>
+<br>
+
+            </p>
+        </body>
+    </html>
+            <!--
+                &emsp; = Tabular grande
+                &ensp; = Tabular pequeña
+                <br> = Salto de línea
+                &lt; = <
+                &gt; = >
+            -->

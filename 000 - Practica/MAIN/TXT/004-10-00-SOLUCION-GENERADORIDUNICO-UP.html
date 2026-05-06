@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="../CSS/estiloTXT.css" media="screen" />
+            <title>004-10-00-SOLUCION-GENERADORIDUNICO-UP</title>
+        </head>
+        <body>
+            <p>
+    from random import randint<br>
+<br>
+print('*** Sistema Generador de ID Único ***')<br>
+<br>
+nombre = input('Cual es tu nombre? ')<br>
+apellido = input('Cual es tu apellido? ')<br>
+anio_nacimiento = input('Cual es tu año de nacimiento (YYYY)? ') # Y - year<br>
+<br>
+# Normalizar los valores<br>
+nombre_2 = nombre.strip().upper()[0:2]<br>
+apellido_2 = apellido.strip().upper()[0:2]<br>
+anio_nacimiento_2 = anio_nacimiento.strip()[2:] # Tambien puede ser [2:4]<br>
+<br>
+# Generar el valor aleatorio<br>
+aleatorio = randint(1000, 9999)<br>
+<br>
+# Generamos el valor de id unico<br>
+id_unico = f'{nombre_2}{apellido_2}{anio_nacimiento_2}{aleatorio}'<br>
+<br>
+print(f'''\nHola {nombre},<br>
+&emsp;Tu nuevo número de identificación (ID) generado por el sistema es:<br>
+&emsp;{id_unico}<br>
+&emsp;Felicidades!''')<br>
+<br>
+
+            </p>
+        </body>
+    </html>
+            <!--
+                &emsp; = Tabular grande
+                &ensp; = Tabular pequeña
+                <br> = Salto de línea
+                &lt; = <
+                &gt; = >
+            -->

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="../CSS/estiloTXT.css" media="screen" />
+            <title>004-02-00-CONVERSIONDATOS-UP</title>
+        </head>
+        <body>
+            <p>
+    # Conversoin de tipos de datos<br>
+<br>
+# Convertir de cadena a numero<br>
+numero_cadena = '10'<br>
+numero_entero = int(numero_cadena)<br>
+print(f'Valor numérico en cadena: {numero_cadena}')<br>
+print(f'Cadena a entero: {numero_entero}')<br>
+<br>
+# Convertir de cadena a flotante<br>
+numero_cadena = '3.14'<br>
+numero_flotante = float(numero_cadena)<br>
+print(f'Cadena a flotante: {numero_flotante}')<br>
+<br>
+# Convertir de numero a cadena<br>
+numero_entero = 25<br>
+numero_cadena = str(numero_entero)<br>
+print(f'Numero a cadena: {numero_cadena}')<br>
+<br>
+# Convertir a booleano<br>
+# Tipo bool es Falso en los siguientes casos<br>
+# Si el valor es 0, cadena vacia, o None, entonces regresa False<br>
+# Regresa True, si el valor es distinto de 0, si es distinto de cadena vacia<br>
+# y tambien si es distinto de None<br>
+numero_entero = 0<br>
+booleano = bool(numero_entero)<br>
+print(f'Valor booleano de 0: {booleano}')  # False, incluye 0, 0.0<br>
+<br>
+numero_entero = 5<br>
+booleano = bool(numero_entero)<br>
+print(f'Valor booleano de 5: {booleano}')  # True<br>
+<br>
+cadena = '' # El largo de la cadena es 0,<br>
+booleano = bool(cadena)<br>
+print(f'Valor booleano de cadena vacía: {booleano}')  # Falso, incluye colecciones vacias<br>
+<br>
+cadena = 'Cadena con valor'<br>
+booleano = bool(cadena)<br>
+print(f'Valor booleano de cadena NO vacía: {booleano}') # True<br>
+<br>
+variable = None<br>
+booleano = bool(variable)<br>
+print(f'Valor booleano de None: {booleano}') # False<br>
+<br>
+
+            </p>
+        </body>
+    </html>
+            <!--
+                &emsp; = Tabular grande
+                &ensp; = Tabular pequeña
+                <br> = Salto de línea
+                &lt; = <
+                &gt; = >
+            -->

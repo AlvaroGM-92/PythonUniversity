@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="../CSS/estiloTXT.css" media="screen" />
+            <title>003-14-00-SOLUCION-GENERADOREMAIL-UP</title>
+        </head>
+        <body>
+            <p>
+    # Generador de  emails<br>
+print('*** Generador de Emails ***')<br>
+<br>
+# Nombre completo del usuario<br>
+nombre_completo = ' Ubaldo Acosta Soto '<br>
+print(f'Nombre usuario: {nombre_completo}')<br>
+# Procesar o normalizar el nombre del usuario<br>
+# Limpiamos los espacios en blanco al inicio y al final<br>
+nombre_normalizado = nombre_completo.strip()<br>
+# Reemplazar los espacios en blanco por puntos<br>
+nombre_normalizado = nombre_normalizado.replace(' ', '.')<br>
+# Convertimos a minusculas<br>
+nombre_normalizado = nombre_normalizado.lower()<br>
+print(f'Nombre usuario normalizado: {nombre_normalizado}')<br>
+<br>
+# Datos de la empresa<br>
+nombre_empresa = ' Global Mentoring '<br>
+print(f'\nNombre empresa: {nombre_empresa}')<br>
+extension_dominio = '.com.mx'<br>
+print(f'Extensión del dominio: {extension_dominio}')<br>
+# Quitamos los espacios en blanco y convertimos a mayusculas<br>
+nombre_empresa_normalizado = nombre_empresa.replace(' ', '').lower()<br>
+dominio_email_normalizado = f'@{nombre_empresa_normalizado}{extension_dominio}'<br>
+print(f'Dominio del email normalizado: {dominio_email_normalizado}')<br>
+# Creamos el email final<br>
+email = f'{nombre_normalizado}{dominio_email_normalizado}'<br>
+print(f'\nEmail final generado: {email}')<br>
+<br>
+
+            </p>
+        </body>
+    </html>
+            <!--
+                &emsp; = Tabular grande
+                &ensp; = Tabular pequeña
+                <br> = Salto de línea
+                &lt; = <
+                &gt; = >
+            -->
